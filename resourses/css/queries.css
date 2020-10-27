@@ -1,0 +1,470 @@
+/*big monitors*/
+
+@media screen and (min-width: 1201px) {
+    .navbar-toggle {
+        display: none;
+     }
+
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 55px;
+        margin-right: 35px;  
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .btn-1 ion-icon {
+        font-size: 28px;
+        position: absolute;
+        right: 5%;
+        bottom: 6%;
+    }
+
+}
+
+/* big tablets to 1200 px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+
+    .shop-nav {
+        position: absolute;
+        right: 5%;
+        top: 2.5%;
+        display: flex !important;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        float: right;
+        list-style: none;
+        margin-top: 0;
+        margin-right: 15px;  
+    }
+
+    .shop-nav li {
+        margin-left: 20px !important;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: none;
+        max-width: 1200px;
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        display: block;
+        font-size: 150%;
+    }
+
+    .navbar-toggle {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar-toggle ion-icon {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 60px;
+    }
+
+    .active {
+        display: block;
+        background-color: var(--yellowTrans);
+    }
+
+    .cart-total {
+        margin: auto;
+        width: 165px;
+        padding: 2px;
+    }
+
+    .shop-cart ion-icon{
+        font-size: 100%;
+        margin-top: 18px;
+        margin-left: 10px;
+    }
+
+    .cart-text {
+        font-size: 90%;
+    }
+
+    .search-box {
+        top: 6%;
+        left: 24%;
+        right: auto;
+        padding: 12px;
+        width: 200px;
+    }
+
+    .btn-1 {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn-1 ion-icon {
+        position: absolute;
+        bottom: 8%;
+        right: 5%;
+        font-size: 30px;
+    }
+
+    .product-header {
+        margin-top: 100px;
+    }
+
+    .span-1-of-3 h3 {
+        font-size: 140%;
+    }
+
+    .section-blog .long-copy {
+        font-size: 110%;
+    }
+
+    .dropdown {
+        float: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content a {
+        padding: 5px 7px;
+    }
+
+    .dropdown-content {
+        position: relative;
+        margin-top: 10px;
+        padding-top: 3px;
+    }
+
+    .dropdown .dropbtn {
+        display: inline; 
+        /*block*/
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+/* small tablets to big tablets fron 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+
+    .col { 
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .logo {
+        position: absolute;
+        height: 70px;
+        width: auto;
+        margin-top: 0;
+        left: 2.5%;
+        top: 1.5%;
+    }
+
+    .main-nav li {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        display: block;
+    }
+
+    .navbar-toggle ion-icon {
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 50px;
+    }
+
+    .search-box {
+        top: 5%;
+        left: 27%;
+        right: auto;
+        padding: 12px;
+        width: 200px;
+    }
+
+    .input-box {
+        font-size: 18px;
+    }
+
+    .btn-1 {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-1 ion-icon {
+        position: absolute;
+        bottom: 12%;
+        right: 15%;
+        font-size: 30px;
+    }
+
+    .card-text {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .card-text h4 {
+        font-size: 130%;
+    }
+
+    .store-icon {
+        font-size: 40px;
+        color: var(--mainGrey);
+        cursor: pointer;
+    }
+
+    .span-1-of-3 h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .span-1-of-3 p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+
+/* small phones to small tablets from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    header {
+        background-size: auto;
+        background-repeat: unset;
+    }
+
+    .row,
+    .hero-text-box { 
+        padding: 0 4%;
+        margin-top: 25px !important;
+    }
+    .col { 
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    h1 { 
+        font-size: 155%; 
+    }
+
+    h2 { font-size: 140%; }
+
+    h5 { font-size: 80%; }
+
+
+    h6 { font-size: 75%; }
+
+    .main-nav li {
+        padding-top: 8px;
+        padding-bottom: 5px;
+        display: block;
+        font-size: 80%;
+    }
+
+    .main-nav li:first-child {
+        padding-top: 15px !important;
+    }
+
+    .main-nav li {
+        font-size: 85%;
+    }
+
+    .navbar-toggle ion-icon {
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 40px;
+    }
+
+    .search-box {
+        top: 6%;
+        right: 1.5%;
+        left: auto;
+        margin-right: 10px;
+        padding: 10px;
+        width: 140px;
+    }
+
+    .input-box {
+        font-size: 14px;
+        float: left;
+    }
+
+    .active {
+        padding-top: 50px;
+    }
+
+    .logo {
+        position: absolute;
+        height: 50px;
+        width: auto;
+        margin-top: 0;
+        left: 2.5%;
+        top: 2.5%;
+    }
+
+    .btn {
+        padding: 8px 24px !important;
+    }
+
+    .text p {
+        text-align: center;
+    }
+
+    .cart-total {
+        width: 100px;
+    }
+
+    .card-text h4 {
+        font-size: 110%;
+    }
+
+    .card-text {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .store-icon {
+        font-size: 32px;
+        color: var(--mainGrey);
+        cursor: pointer;
+    }
+
+    .shop-cart ion-icon{
+        font-size: 150%;
+        margin-left: 10px;
+        margin-top: 2px;
+
+    }
+
+    .btn-1 {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-1 ion-icon {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        font-size: 22px;
+    }
+
+    .section-cart-shopping {
+        width: 100%;
+    }
+
+    .product-header {
+        grid-template-columns: 35% 30% 35%;
+        grid-column-gap: 5px;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .product-item {
+        grid-template-columns: 35% 30% 35%;
+        grid-column-gap: 5px;
+        width: 100%;    
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .price {
+        display: none;
+    }
+
+    .price-title {
+        display: none;
+    }
+
+    .quantity,
+    .total {
+        margin-top: 2px;
+    }
+
+    .total {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .total ion-icon {
+        font-size: 1rem;
+        margin-top: 44px;
+    }
+
+    .blog {
+        margin-bottom: 15px;
+    }
+
+    .span-1-of-3 h3 {
+        font-size: 135%;
+    }
+
+    .span-1-of-3 p {
+        font-size: 90%;
+    }
+
+    footer {
+        padding-top: 15px;
+    }
+
+    .footer-nav {
+        text-align: center;
+        float: none;
+    }
+
+    .social-links {
+        text-align: center;
+        float: none;
+        margin-top: 15px;
+    }
+
+    .row p {
+        margin-top: 0;
+    }
+}
+
+/* small phones fron 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    h2{ font-size: 135%; }
+
+    section { padding: 25px 0; }
+
+    .btn {
+        padding: 6px 20px !important;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+}

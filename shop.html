@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resourses/css/style.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resourses/css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <title>Cupcake Shop</title>
+</head>
+<body>
+
+    <section class="section-cart-shopping">
+
+        <nav>
+            <div class="row">
+                <a href="index.html">
+                    <img src="resourses/images/logo.png" alt="Pink logo" class="logo">
+                </a>
+                <ul class="main-nav shop-nav" id="js-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="cart">
+                        <div class="cart-total">
+                            <div class="shop-cart">
+                                <ion-icon name="cart"></ion-icon>
+                            </div>
+                            <div class="cart-text">
+                                <a href="shop.html">Items &mdash;<span>0</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="products-container row">
+
+            <div class="product-header">
+                <h5 class="product-title">Product</h5>
+                <h5 class="price-title">Price</h5>
+                <h5 class="quantity-title">Quantity</h5>
+                <h5 class="total-title">Total</h5>
+            </div>
+
+            <div class="products"></div>
+        </div>
+    </section>
+
+
+    <script src="./resourses/js/shopCart.js"></script>
+    <script src="./resourses/js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+</body>
+</html>
+
+

@@ -2,4 +2,5 @@
 
 This project is hosted [here](http://candyshop.vikiniedobova.cz/)
 
-![Cupcakes Shop](./resources/images/candyshop.PNG "Cupcakes Shop")
+![Cupcakes Shop](./resourses/images/candyshop.PNG "Cupcakes Shop")
+

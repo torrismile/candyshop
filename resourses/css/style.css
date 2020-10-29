@@ -144,6 +144,8 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -164,6 +166,7 @@ header {
     font-size: 90%;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.3s;
+    -webkit-transition: border-bottom 0.3s;
 }
 
 .main-nav li a:hover,
@@ -177,6 +180,7 @@ header {
     padding: 10px 20px;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     flex-wrap: nowrap;
     align-content: space-between;
 }
@@ -268,11 +272,14 @@ header {
     height: auto;
     transform: scale(1.15);
     transition: transform 0.7s, opacity 0.7s;
+    -webkit-transition: transform 0.7s, opacity 0.7s;
 }
 
 .img-container img:hover {
     opacity: 1;
     transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
 }
 
 .card-body {
@@ -300,6 +307,8 @@ header {
     top: 8%;
     left: 15%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     height: 40px;
     border-radius: 40px;
     padding: 10px;
@@ -313,6 +322,7 @@ header {
     float: left;
     color: var(--mainGrey);
     transition: all 0.4s;
+    -webkit-transition: all 0.4s;
     line-height: 20px;
     text-align: start;
     text-decoration: none;
@@ -350,6 +360,7 @@ ion-icon {
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
@@ -569,6 +580,7 @@ footer {
     border: 0;
     color: #888;
     transition: color 0.2s;
+    -webkit-transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
@@ -586,6 +598,7 @@ footer {
 .logo-instagram,
 .logo-twitter {
     transition: color 0.2s;
+    -webkit-transition: color 0.2s;
 }
 
 .logo-facebook:hover {

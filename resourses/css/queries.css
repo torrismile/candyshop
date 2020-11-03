@@ -36,6 +36,12 @@
 
     .row { padding: 0 2%; }
 
+    .logo-black {
+        position: fixed;
+        top: 12%;
+        left: 4%;
+    }
+
     .shop-nav {
         position: absolute;
         right: 5%;
@@ -79,6 +85,13 @@
         right: 5%;
         cursor: pointer;
         font-size: 60px;
+    }
+
+    
+    .sticky .navbar-toggle ion-icon {
+        position: fixed;
+        top: 12%;
+        right: 5%;
     }
 
     .active {
@@ -140,7 +153,7 @@
     }
 
     .dropdown-content a {
-        padding: 5px 7px;
+        padding: 10px 14px;
     }
 
     .dropdown-content {
@@ -180,7 +193,11 @@
         width: auto;
         margin-top: 0;
         left: 2.5%;
-        top: 1.5%;
+        top: 1%;
+    }
+
+    .logo-black {
+        display: none !important;
     }
 
     .main-nav li {
@@ -193,14 +210,20 @@
 
     .navbar-toggle ion-icon {
         position: absolute;
-        top: 2%;
+        top: 2.8%;
         right: 5%;
         cursor: pointer;
         font-size: 50px;
     }
 
+    .sticky .navbar-toggle ion-icon {
+        position: fixed;
+        top: 8%;
+        right: 7%;
+    }
+
     .search-box {
-        top: 5%;
+        top: 5.5%;
         left: 27%;
         right: auto;
         padding: 12px;
@@ -298,14 +321,20 @@
 
     .navbar-toggle ion-icon {
         position: absolute;
-        top: 2.5%;
+        top: 3.3%;
         right: 5%;
         cursor: pointer;
         font-size: 40px;
     }
 
+    .sticky .navbar-toggle ion-icon {
+        position: fixed;
+        top: 4%;
+        right: 5%;
+    }
+
     .search-box {
-        top: 6%;
+        top: 6.5%;
         right: 1.5%;
         left: auto;
         margin-right: 10px;
@@ -322,13 +351,23 @@
         padding-top: 50px;
     }
 
+    .sticky .active {
+        padding-top: 10px;
+    }
+
     .logo {
         position: absolute;
-        height: 50px;
+        height: 45px;
         width: auto;
         margin-top: 0;
         left: 2.5%;
         top: 2.5%;
+    }
+
+    .logo-black {
+        /* height: 30px;
+        width: auto; */
+        display: none !important;
     }
 
     .btn {

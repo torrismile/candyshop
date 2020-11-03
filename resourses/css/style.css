@@ -465,7 +465,7 @@ ion-icon {
     display: none;
     padding: 12px 16px;
     position: absolute;
-    background-color: #fbebb3;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }

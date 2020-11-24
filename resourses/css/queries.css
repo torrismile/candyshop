@@ -1,33 +1,113 @@
 /*big monitors*/
 
 @media screen and (min-width: 1201px) {
+
+/*---------Sticky Nav-------------------*/
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255, 0.98);
+        box-shadow: 0 2px 2px #efefef;
+        z-index: 9999;
+    }
+
+    .sticky .main-nav {
+        padding-top: 23px;
+        
+    }
+
+    .sticky .main-nav li {
+        padding-bottom: 30px;
+        font-size: 90%;
+        float: right;
+
+    }
+
+    .sticky .main-nav li:first-of-type {
+        margin-right: 50px;
+    }
+
+    .sticky .main-nav .dropdown a:link,
+    .sticky .main-nav .dropdown a:visited {
+        padding: 10px 0;
+    }
+
+    .sticky .cart-nav__text {
+        font-size: 80%;
+        padding-top: 32px;
+
+    }
+
+    .sticky .cart-nav__icon {
+        position: absolute;
+        top: -18%;
+        right: 45%;
+    }
+
+    .sticky .logo-main__color{
+        display: none;
+    }
+
+    .sticky .logo-main__black {
+        display: block;
+    }
+
+    .sticky .main-nav .dropdown-content {
+        display: none;
+        padding: 12px 16px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+      
     .navbar-toggle {
         display: none;
-     }
-
-    .main-nav {
-        float: right;
-        list-style: none;
-        margin-top: 55px;
-        margin-right: 35px;  
     }
 
     .main-nav li {
         display: inline-block;
         margin-left: 40px;
     }
+}
 
-    .btn-1 ion-icon {
-        font-size: 28px;
+/* big monitors to 1600 px */
+@media only screen and (max-width: 1600px) {
+
+    .search-form {
         position: absolute;
-        right: 5%;
-        bottom: 6%;
+        top: 5%;
+        right: 2%;
     }
 
+    .search-form__field input[type=text] {
+        font-size: 14px;
+        width: 70%;
+    }
+      
+    .search-form__field button {
+        width: 20%;
+        font-size: 14px;
+    }
 }
+
 
 /* big tablets to 1200 px */
 @media only screen and (max-width: 1200px) {
+
+    .navbar-toggle {
+        display: none;
+     }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+
     .hero-text-box {
         position: absolute;
         width: 100%;
@@ -35,12 +115,6 @@
     }
 
     .row { padding: 0 2%; }
-
-    .logo-black {
-        position: fixed;
-        top: 8%;
-        left: 4%;
-    }
 
     .shop-nav {
         position: absolute;
@@ -59,82 +133,6 @@
         margin-left: 20px !important;
     }
 
-    .main-nav {
-        list-style-type: none;
-        display: none;
-        max-width: 1200px;
-    }
-
-    .main-nav li {
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 16px;
-        padding-bottom: 8px;
-        display: block;
-        font-size: 150%;
-    }
-
-    .navbar-toggle {
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .navbar-toggle ion-icon {
-        position: absolute;
-        top: 3%;
-        right: 5%;
-        cursor: pointer;
-        font-size: 60px;
-    }
-
-    
-    .sticky .navbar-toggle ion-icon {
-        position: fixed;
-        top: 8%;
-        right: 5%;
-    }
-
-    .active {
-        display: block;
-        background-color: var(--yellowTrans);
-    }
-
-    .cart-total {
-        margin: auto;
-        width: 210px;
-        padding: 2px;
-    }
-
-    .shop-cart ion-icon{
-        font-size: 135%;
-        margin-top: 5px;
-        margin-left: 10px;
-    }
-
-    .cart-text {
-        font-size: 100%;
-    }
-
-    .search-box {
-        top: 6%;
-        left: 24%;
-        right: auto;
-        padding: 12px;
-        width: 200px;
-    }
-
-    .btn-1 {
-        width: 25px;
-        height: 25px;
-    }
-
-    .btn-1 ion-icon {
-        position: absolute;
-        bottom: 8%;
-        right: 5%;
-        font-size: 30px;
-    }
-
     .product-header {
         margin-top: 100px;
     }
@@ -143,8 +141,113 @@
         font-size: 140%;
     }
 
-    .section-blog .long-copy {
+    .section-blog__long-copy {
         font-size: 110%;
+    }
+
+    .search-form {
+        position: absolute;
+        top: 10%;
+        right: 38%;
+    }
+
+    .search-form__field input[type=text] {
+        font-size: 14px;
+        width: 80%;
+    }
+      
+    .search-form__field button {
+        width: 20%;
+        font-size: 14px;
+    }
+}
+
+
+
+/* small tablets to big tablets fron 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+
+    .col { 
+        width: 49%; /*100*/
+        margin: 0 1% 1% 0; /*0 0 3 0*/
+    }
+
+    .row {
+        padding: 0 0 0 1%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .logo-main__color {
+        position: absolute;
+        height: 70px;
+        width: auto;
+        margin-top: 0;
+        left: 2.5%;
+        top: 1.5%;
+    }
+
+    .logo-main__black {
+        display: none !important;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: none;
+        max-width: 1200px;
+    } 
+
+    .navbar-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        display: block !important;
+    }
+
+    .navbar-toggle i {
+        position: absolute;
+        top: 2.8%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 50px;
+    } 
+
+
+    .active {
+        display: block;
+        background-color: rgb(249, 228, 148);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .disactive {
+        display: none;
+    }
+
+
+    .main-nav li {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        display: block;
+        font-size: 100%;
+    }
+
+    .input-box {
+        font-size: 18px;
+    }
+
+    .main-nav__links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 200%;
     }
 
     .dropdown {
@@ -168,105 +271,21 @@
         width: 100%;
         text-align: left;
     }
-}
 
-
-
-/* small tablets to big tablets fron 768px to 1023px*/
-@media only screen and (max-width: 1023px) {
-
-    body { font-size: 18px; }
-    section { padding: 60px 0; }
-
-    .col { 
-        width: 100%;
-        margin: 0 0 3% 0;
-    }
-
-    p {
-        font-size: 100%;
-    }
-
-    .logo {
-        position: absolute;
-        height: 70px;
-        width: auto;
-        margin-top: 0;
-        left: 2.5%;
-        top: 1%;
-    }
-
-    .logo-black {
-        display: none !important;
-    }
-
-    .main-nav li {
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 12px;
-        padding-bottom: 5px;
-        display: block;
-    }
-
-    .navbar-toggle ion-icon {
-        position: absolute;
-        top: 2.8%;
-        right: 5%;
-        cursor: pointer;
-        font-size: 50px;
-    }
-
-    .sticky .navbar-toggle ion-icon {
-        position: fixed;
-        top: 8%;
-        right: 7%;
-    }
-
-    .search-box {
-        top: 5.5%;
-        left: 27%;
-        right: auto;
-        padding: 12px;
-        width: 200px;
-    }
-
-    .input-box {
-        font-size: 18px;
-    }
-
-    .btn-1 {
-        width: 10px;
-        height: 10px;
-    }
-
-    .btn-1 ion-icon {
-        position: absolute;
-        bottom: 12%;
-        right: 15%;
-        font-size: 30px;
-    }
-
-    .card-text {
+    .section-photo-gallery__card-offer--card-text {
         justify-content: space-between;
         display: flex;
         font-size: 100%;
     }
 
-    .card-text h4 {
+    .section-photo-gallery__card-offer--card-text h4 {
         font-size: 130%;
     }
 
-    .store-icon {
-        font-size: 40px;
+    .section-photo-gallery__card-offer--card-text i {
+        font-size: 35px;
         color: var(--mainGrey);
         cursor: pointer;
-    }
-
-    .shop-cart ion-icon{
-        font-size: 140%;
-        margin-left: 10px;
-        margin-top: 3px;
-
     }
 
     .span-1-of-3 h3 {
@@ -279,6 +298,11 @@
         text-align: center;
     }
 
+    .search-form {
+        position: absolute;
+        top: 3.3%;
+        right: 15%;
+    }
 }
 
 
@@ -287,8 +311,8 @@
     body { font-size: 16px; }
     section { padding: 30px 0; }
     header {
-        background-size: auto;
-        background-repeat: unset;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .row,
@@ -316,18 +340,10 @@
         padding-top: 8px;
         padding-bottom: 5px;
         display: block;
-        font-size: 80%;
+        font-size: 75%;
     }
 
-    .main-nav li:first-child {
-        padding-top: 15px !important;
-    }
-
-    .main-nav li {
-        font-size: 85%;
-    }
-
-    .navbar-toggle ion-icon {
+    .navbar-toggle i {
         position: absolute;
         top: 3.3%;
         right: 5%;
@@ -335,47 +351,18 @@
         font-size: 40px;
     }
 
-    .sticky .navbar-toggle ion-icon {
-        position: fixed;
-        top: 4%;
-        right: 5%;
-    }
-
-    .search-box {
-        top: 6.5%;
-        right: 1.5%;
-        left: auto;
-        margin-right: 10px;
-        padding: 10px;
-        width: 140px;
-    }
-
     .input-box {
         font-size: 14px;
         float: left;
     }
 
-    .active {
-        padding-top: 50px;
-    }
-
-    .sticky .active {
-        padding-top: 10px;
-    }
-
-    .logo {
+    .logo-main__color  {
         position: absolute;
-        height: 45px;
+        height: 50px;
         width: auto;
         margin-top: 0;
         left: 2.5%;
         top: 2.5%;
-    }
-
-    .logo-black {
-        /* height: 30px;
-        width: auto; */
-        display: none !important;
     }
 
     .btn {
@@ -386,45 +373,22 @@
         text-align: center;
     }
 
-    .cart-total {
-        width: 110px;
-    }
-
-    .card-text h4 {
+    .section-photo-gallery__card-offer--card-text h4 {
         font-size: 110%;
     }
 
-    .card-text {
+    .section-photo-gallery__card-offer--card-text {
         justify-content: space-between;
         display: flex;
     }
 
-    .store-icon {
-        font-size: 32px;
+    .section-photo-gallery__card-offer--card-text i {
+        font-size: 28px;
         color: var(--mainGrey);
         cursor: pointer;
     }
 
-    .shop-cart ion-icon{
-        font-size: 130%;
-        margin-left: 10px;
-        margin-top: 0.5px;
-
-    }
-
-    .btn-1 {
-        width: 10px;
-        height: 10px;
-    }
-
-    .btn-1 ion-icon {
-        position: absolute;
-        bottom: 20%;
-        right: 10%;
-        font-size: 22px;
-    }
-
-    .section-cart-shopping {
+    .header-shop{
         width: 100%;
     }
 
@@ -463,12 +427,18 @@
         flex-wrap: nowrap;
     }
 
-    .total ion-icon {
+    .total i {
         font-size: 1rem;
         margin-top: 44px;
     }
 
-    .blog {
+    .quantity h6,
+    .total h6,
+    .price h6 {
+        padding: 0 10px;
+    }
+    
+    .section-blog__news {
         margin-bottom: 15px;
     }
 
@@ -498,6 +468,22 @@
     .row p {
         margin-top: 0;
     }
+
+    .search-form {
+        position: absolute;
+        top: 3.5%;
+        right: 9.6%;
+    }
+    
+    .search-form__field input[type=text] {
+        font-size: 12px;
+        width: 60%;
+    }
+      
+    .search-form__field button {
+        width: 20%;
+        font-size: 12px;
+    }
 }
 
 /* small phones fron 0 to 480px*/
@@ -507,11 +493,29 @@
 
     section { padding: 25px 0; }
 
+    .search-form {
+        position: absolute;
+        height: 45px;
+        width: auto;
+        top: 3.7%;
+        right: 9.6%;
+    }
+
+    .logo-main__color {
+        position: absolute;
+        left: 2.5%;
+        top: 2.3%;
+    }
+
     .btn {
         padding: 6px 20px !important;
     }
 
     footer {
         font-size: 70%;
+    }
+
+    .main-nav li {
+        font-size: 65%;
     }
 }

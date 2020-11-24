@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="resourses/css/style.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resourses/css/queries.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 
     <title>Cupcake Shop</title>
@@ -13,72 +16,66 @@
 <body>
 
     <header>
-        <div class="search-box">
-            <input type="text" class="input-box" placeholder="Search...">
-            <a href="#" class="btn-1">
-                <ion-icon name="search"></ion-icon>
-            </a>
+        <div class="search-form">
+            <form class="search-form__field">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
 
         <nav>
             <span class="navbar-toggle" id="js-navbar-toggle">
-                <ion-icon name="menu" class="menu"></ion-icon>
+                <i class="fa fa-bars"></i>
             </span>
-            <a href="index.html">
-                <img src="resourses/images/logo-1.png" alt="Pink logo" class="logo">
-                <img src="resourses/images/logo-2.png" alt="Black-logo" class="logo-black">
+            <a href="index.html" class="logo-main">
+                <img src="resourses/images/logo-1.png" alt="Pink logo" class="logo-main__color">
+                <img src="resourses/images/logo-2.png" alt="Black-logo" class="logo-main__black">
             </a>
-            <ul class="main-nav" id="js-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#section-about">About</a></li>
-                <li><a href="#section-gallery">Gallery</a></li>
-                <li>
-                    <div class="dropdown">
-                        <div class="dropbtn">Products</div>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+
+            <ul class="main-nav center" id="js-menu">
+                <div class="main-nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#section-about">About</a></li>
+                    <li><a href="#section-gallery">Gallery</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropbtn">Products</div>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="cart">
-                    <div class="cart-total">
-                        <div class="shop-cart">
-                            <a href="shop.html">
-                                <ion-icon name="cart"></ion-icon>
-                            </a>
-                        </div>
-                        <div class="cart-text">
-                            <a href="shop.html"> Items &mdash; <span>0</span></a>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+
+                    <li class="cart-nav">
+                        <a href="shop.html"> Items &mdash; <span>0</span></a>
+                        <span class="fa fa-shopping-cart"></span>
+                    </li>
+                </div>
             </ul>
         </nav>
 
-        <div class="hero-text-box">
+        <div class="hero-text-box" id="hero-text-box">
             <h1>Welcome to Candy Shop</h1>
-            <a class="btn btn-full" href="#">Buy now</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <button class="btn btn-full">Buy now</button>
+            <button class="btn btn-ghost">Show me more</button>
         </div>
-
     </header>
 
     <section class="section-about" id="section-about">
-
-        <div class="row content">
+        <div class="row">
             <h2>Our History</h2>
         </div>
 
         <div class="row">
             <div class="col span-1-of-2 box">
-                <div class="image">
+                <div class="section-about__image">
                     <img src="resourses/images/about.jpg" alt="About shop">
                 </div>
             </div>
             <div class="col span-1-of-2 box">
-                <div class="text">
+                <div class="section-about__text">
                     <p>
                         Pellentesque pretium lectus id turpis. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Proin in tellus sit amet nibh dignissim sagittis. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Fusce nibh. Praesent vitae arcu tempor neque lacinia pretium. Nullam rhoncus aliquam metus. Aliquam in lorem sit amet leo accumsan lacinia. <br> Etiam dictum tincidunt diam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam ornare wisi eu metus. Nunc auctor.
                         Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. 
@@ -86,101 +83,102 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section class="section-photo-gallery" id="section-gallery">
-
         <div class="row">
             <h3>Candy Store</h3>
         </div>
 
         <div class="row">
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/1.jpg" alt="Mini cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Mini cupcakes</h4>
-                            <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$8</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$8</h4>
                     </div>
                 </div>
             </div>
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/2.jpg" alt="Wedding's cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Wedding's cupcakes</h4>
-                        <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$9</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$9</h4>
                     </div>
                 </div>
             </div>
+
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/3.jpg" alt="Chokolate cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Chokolate cupcakes</h4>
-                        <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$6</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$6</h4>
                     </div>
                 </div>
             </div>
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/4.jpg" alt="Vanilla cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Vanilla cupcakes</h4>
-                        <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$5</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$5</h4>
                     </div>
                 </div>
             </div>
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/5.jpg" alt="Clasic cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Clasic cupcakes</h4>
-                        <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$7</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$7</h4>
                     </div>
                 </div>
             </div>
             <div class="col span-2-of-6 card">
-                <div class="img-container">
+                <div class="section-photo-gallery__img-container">
                     <img src="resourses/images/6.jpg" alt="Double cupcakes">
                 </div>
-                <div class="card-body">
-                    <div class="card-text">
+                <div class="section-photo-gallery__card-offer">
+                    <div class="section-photo-gallery__card-offer--card-text">
                         <h4>Double cupcakes</h4>
-                        <ion-icon name="cart" class="store-icon"></ion-icon>
-                        <h4 class="store-item-value">$12</h4>
+                        <i class="fa fa-shopping-cart add"></i>
+                        <h4 class="card-text--value">$12</h4>
                     </div>
                 </div>
             </div>
+            
         </div>
 
+        <div id="snackbar">Add to the shopping cart</div>
     </section>
 
     <section class="section-blog" id="section-blog">
         <div class="row">
             <h2>Our latest news</h2>
-            <p class="long-copy">
+            <p class="section-blog__long-copy">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Duis pulvinar. 
             </p>
         </div>
 
-        <div class="blog row">
+        <div class="section-blog__news row">
             <div class="col span-1-of-3">
                 <img src="./resourses/images/blog-1.jpg" alt="Healthy breakfast">               
                 <h3>Top 10 healthy breakfast to be fit</h3>
@@ -206,7 +204,6 @@
         <div class="u-center-text">
             <a class="btn btn-ghost btn-blog" href="#">View all news</a>
         </div>
-
     </section>
 
     <footer>
@@ -222,10 +219,10 @@
             </div>
             <div class ="col span-1-of-2">
                 <ul class="social-links">
-                    <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-google" class="logo-google"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></ion-icon></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></ion-icon></a></li>
                 </ul>
             </div>
         </div>
@@ -240,7 +237,7 @@
     <script src="./resourses/js/script.js"></script>
     <script src="./resourses/js/shopCart.js"></script>
     <script src="./resourses/js/main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     
 </body>
+
 </html>

@@ -6,30 +6,28 @@
     <link rel="stylesheet" href="resourses/css/style.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resourses/css/queries.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 
     <title>Cupcake Shop</title>
 </head>
 <body>
 
-    <section class="section-cart-shopping">
+    <section class="header-shop">
 
         <nav>
             <div class="row">
-                <a href="index.html">
-                    <img src="resourses/images/logo-1.png" alt="Pink logo" class="logo">
+                <a href="index.html" class="logo-main">
+                    <img src="resourses/images/logo-1.png" alt="Pink logo" class="logo-main__color">
                 </a>
-                <ul class="main-nav shop-nav" id="js-menu">
+                <ul class="main-nav center" id="js-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="cart">
-                        <div class="cart-total">
-                            <div class="shop-cart">
-                                <ion-icon name="cart"></ion-icon>
-                            </div>
-                            <div class="cart-text">
-                                <a href="shop.html">Items &mdash;<span>0</span></a>
-                            </div>
-                        </div>
+                
+                    <li class="cart-nav">
+                        <a href="shop.html"> Items &mdash; <span>0</span></a>
+                        <span class="fa fa-shopping-cart"></span>
                     </li>
                 </ul>
             </div>
@@ -48,11 +46,9 @@
         </div>
     </section>
 
-
     <script src="./resourses/js/shopCart.js"></script>
     <script src="./resourses/js/script.js"></script>
     <script src="./resourses/js/main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 
-let carts = document.querySelectorAll('.store-icon');
+let carts = document.querySelectorAll('.add');
 
 let products = [
     {
@@ -45,13 +45,20 @@ for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cartNumbers(products[i]);
         totalCost(products[i]);
+        showProductsInCart();
     })
 }
+
+function showProductsInCart() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
     if(productNumbers) {
-        document.querySelector('.cart-text span').textContent = productNumbers;
+        document.querySelector('.cart-nav span').textContent = productNumbers;
     }
 }
 
@@ -60,10 +67,10 @@ function cartNumbers(product) {
     productNumbers = parseInt(productNumbers);
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
-        document.querySelector('.cart-text span').textContent = productNumbers + 1;
+        document.querySelector('.cart-nav span').textContent = productNumbers + 1;
     } else {
         localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.cart-text span').textContent = 1;
+        document.querySelector('.cart-nav span').textContent = 1;
     }
     setItems(product);
 }
@@ -119,15 +126,13 @@ function displayCart() {
                     <h6>$${item.price},00</h6>
                 </div>
                 <div class="quantity">
-                    <ion-icon class="decrease" 
-                    name="arrow-dropleft-circle"></ion-icon>
+                    <i class="fa fa-minus"></i>
                     <h6>${item.inCart}</h6>
-                    <ion-icon class="increase" 
-                    name="arrow-dropright-circle"></ion-icon>
+                    <i class="fa fa-plus"></i>
                 </div>
                 <div class="total">
                     <h6>$${item.inCart * item.price },00</h6>
-                    <ion-icon name="close-circle"></ion-icon>
+                    <i class="fa fa-times-circle"></i>
                 </div>
             </div>
             `;
@@ -147,3 +152,5 @@ function displayCart() {
 }
 onLoadCartNumbers();
 displayCart();
+
+

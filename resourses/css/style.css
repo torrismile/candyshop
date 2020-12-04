@@ -279,7 +279,7 @@ header {
 
 .section-photo-gallery__card-offer {
     margin-top: 10px;
-    padding: 1.25rem;
+    padding: 1rem;
 }
 
 .section-photo-gallery__card-offer--card-text{
@@ -292,6 +292,10 @@ header {
     font-size: 30px;
     color: var(--mainGrey);
     cursor: pointer;
+}
+
+.card-text--value {
+    font-size: 120%;
 }
 
 /* ---------------------------------------- */

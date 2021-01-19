@@ -128,7 +128,7 @@ h2::before {
 
 
 header {
-    background-image: linear-gradient(rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)), url('./img/hero.jpg');
+    background-image: linear-gradient(rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)), url('./img/hero.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -119,7 +119,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="product-item">
                 <div class="product">
-                    <img src = "resourses/images/mini-img/${item.tag}.jpg">
+                    <img src = "resourses/images/mini-img/${item.tag}.jpeg">
                     <h5>${item.name}</h5>
                 </div>
                 <div class="price">
